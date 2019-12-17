@@ -1,0 +1,48 @@
+{
+  "name": "antd-demo",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "antd": "^3.25.3",
+    "concurrently": "^5.0.0",
+    "electron-is-dev": "^1.1.0",
+    "electron-store": "^5.1.0",
+    "for-editor": "^0.3.4",
+    "nedb": "^1.8.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "uuid-v4": "^0.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start && electron .",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"npm start\"",
+    "serve": "electron ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "wait-on": "^3.3.0"
+  }
+}

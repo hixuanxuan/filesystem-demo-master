@@ -1,0 +1,7 @@
+.globle-wrapper{
+    display: flex;
+    .right-wrapper{
+        flex: 1;
+        border-right:1px solid #ccc;
+    }
+}
